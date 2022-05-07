@@ -287,7 +287,12 @@ const Header = () => {
                         <div className="wallet-middle-box">
                           <ul>
                             <li>
-                              <a href="javascript:;" onClick={login}>
+                              <a
+                                href="javascript:;"
+                                onClick={() => {
+                                  authenticate({ provider: "metamask" });
+                                }}
+                              >
                                 <img
                                   // src="../visuals/images/meta-mask.png"
                                   src={metaMask}
